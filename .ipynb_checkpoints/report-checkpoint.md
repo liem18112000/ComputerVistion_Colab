@@ -198,31 +198,6 @@ app.set_stragegy(stragegy)
 
 #### a. U-net MobileNetV2 Model
 
-The architecture of model is taking the advantage of MobileNetV2 pretrained model with imagenet weight 
-
-The reason why I choose this type of pretrained model is :
-- It is lighter than such models as VGG, Inception or ResNet 
-- it has many features that suitable for being the encoder of my model
-***
-In compile stage, I apply:
-- Optimizer: Apdaptive Momemtum Estimation (ADAM) 
-    - Hyperparameter : B1 = 0.9, B2= 0.999
-    - Exponential Decay Learning Rate : 
-        - Initial learning rate : 0.1
-        - Decay learning rate : one time per 100000 steps
-        - Decay base : 0.95
-        - Apply staircase mode
-- Loss function : Categorical Crossentropy
-    - Logits mode applied
-- Number of epoch : 50 epochs
-***
-In training stage, I apply :
-- Callbacks:
-    - Early Stopping on trainng loss with patience is 5
-    - Early Stopping on validation loss with patience is 5
-
-***
-
 ```
 Model: "U-net MobileNetV2"
 __________________________________________________________________________________________________
@@ -313,33 +288,6 @@ Final result on test set :
 
 #### b. U-net MobileNetV3 Model
 
-The architecture of model is taking the advantage of MobileNetV3Large pretrained model with imagenet weight 
-
-The reason why I choose this type of pretrained model is :
-- It is lighter than such models as VGG, Inception or ResNet 
-- it has many features that suitable for being the encoder of my model
-- Trsusting it do better job than its ancestor MobileNetV2
-***
-In compile stage, I apply:
-- Optimizer: Apdaptive Momemtum Estimation (ADAM) 
-    - Hyperparameter : B1 = 0.9, B2= 0.999
-    - Exponential Decay Learning Rate : 
-        - Initial learning rate : 0.03
-        - Decay learning rate : one time per 100000 steps
-        - Decay base : 0.95
-        - Apply staircase mode
-- Loss function : Categorical Crossentropy
-    - Logits mode applied
-- Number of epoch : 50 epochs
-***
-In training stage, I apply :
-- Callbacks:
-    - Early Stopping on trainng loss with patience is 5
-    - Early Stopping on validation loss with patience is 5
-
-***
-
-
 ```
 Model: "U-net MobileNetV3 Model"
 __________________________________________________________________________________________________
@@ -426,28 +374,6 @@ Final result on test set
 ```
 
 #### c. U-net Model
-
-The architecture of model is en exprimental to test how good a plain model could do compare to pretrained-base ones
-
-The reason why I choose this type of pretrained model is :
-- Only to compare to other architecture of image segmentation
-***
-In compile stage, I apply:
-- Optimizer: Apdaptive Momemtum Estimation (ADAM) 
-    - Hyperparameter : B1 = 0.9, B2= 0.999
-    - Exponential Decay Learning Rate : 
-        - Initial learning rate : 0.0001
-        - Decay learning rate : one time per 100000 steps
-        - Decay base : 0.95
-        - Apply staircase mode
-- Loss function : Categorical Crossentropy
-    - Logits mode applied
-- Number of epoch : 50 epochs
-***
-In training stage, I apply :
-- Callbacks:
-    - Early Stopping on trainng loss with patience is 5
-    - Early Stopping on validation loss with patience is 5
 
 ```
 Model: "U-net plain"
@@ -791,58 +717,3 @@ Final result on test set
 |U-net MobileNetV3| ![png](Remove_Background\unet_mobileV3\output_41_0.png)|![png](Remove_Background\unet_mobileV3\output_41_1.png) |
 |U-net Plain      | ![png](Remove_Background\unet_model_diy\output_41_0.png)| ![png](Remove_Background\unet_model_diy\output_41_1.png)|
 ***
-
-## V. Conclusion
-From the statistics of all methods, I think that simple methods of digital image process by no mean can solve the problem that I have mentioned which is eliminating or transperenting the background of the images effectively. Meanwhile, according to the possitive data from the model of semantic segmentation, I do think that these methods are the answer to problem.
-
-However, in the real test, the thesis that MobileNetV3-based Unet will surpass the MobileNetV2-based ones is complete false. Frankly speaking, It seem that the the greater number of layers is not the solution to the problem of accuracy and performance. Meanwhile, the plain architecture of U-net based on multiple convolutions adn upsampling layers susprisingly make a far better progress than I have expected at first.  
-
-## VI. Future research
-In nearly future, the research of constructing U-Net architecture base on new type of pretrained models like ResNets, Inceptions will be carried out to find out the the most feasible solution to the problem.
-
-Beside architecture of models, I have decided to supersede current ADAM optimizer with a more aggressive approach which is ADAS optimizer (Adaptive Scheduling of Stochastic Gradients)
-
-## VII. Sample Codes
-
-### 1. Digital Iamge Processing 
-
-[Colab Sources Code](https://colab.research.google.com/drive/1lESsM6_iXgN7nPZA9xAIIwa5Hoahqn1Q?usp=sharing)
-
-### 2. U-Net Semantic Segmentation
-[Colab Sources Code](https://colab.research.google.com/drive/19aw4nuQAWz4z2GG0U1Uqq4E_3SFy4ODC?usp=sharing)
-
-### 3. GitHub of entire research
-[Github Page](https://github.com/liem18112000/ComputerVistion_Colab.git)
-
-[Github SSH](git@github.com:liem18112000/ComputerVistion_Colab.git)
-
-Github CLI :
-```
-gh repo clone liem18112000/ComputerVistion_Colab
-```
-
-## VIII. References
-
-BORCAN, M. (2020, 4 23). https://programmerbackpack.com. Retrieved from https://programmerbackpack.com/k-means-clustering-for-image-segmentation/: https://programmerbackpack.com/
-
-k-means-clustering-for-image-segmentation/
-datacarpentry. (2018). https://datacarpentry.org. Retrieved from Image Processing with Python: https://datacarpentry.org/image-processing/07-thresholding/
-
-GeekforGeek. (2019, 5 16). ML | Mean-Shift Clustering. Retrieved from https://www.geeksforgeeks.org/ml-mean-shift-clustering/: https://www.geeksforgeeks.org/ml-mean-shift-clustering/
-
-missinglink.ai. (2020, 12 19). https://missinglink.ai. Retrieved from https://missinglink.ai/guides/computer-vision/image-segmentation-deep-learning-methods-applications/: https://missinglink.ai/guides/computer-vision/image-segmentation-deep-learning-methods-applications/
-
-OpenCV. (n.d.). https://docs.opencv.org/master. Retrieved from https://docs.opencv.org/master/de/d4d/tutorial_py_kmeans_understanding.html: https://docs.opencv.org/master/de/d4d/tutorial_py_kmeans_understanding.html
-
-OpenCV. (n.d.). https://docs.opencv.org/master. Retrieved from https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding: https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html
-
-Tensorflow. (2018). Image segmentation. Retrieved from https://www.tensorflow.org/tutorials/images/segmentation: https://www.tensorflow.org/tutorials/images/segmentation
-
-Tensorflow_2.4.1. (2018, 9 12). https://www.tensorflow.org. Retrieved from https://www.tensorflow.org/api_docs/python/tf/keras/applications: https://www.tensorflow.org/api_docs/python/tf/keras/applications
-
-Tomar, N. (2020, 2 13). https://idiotdeveloper.com. Retrieved from Unet Segmentation in TensorFlow: https://idiotdeveloper.com/unet-segmentation-in-tensorflow/
-
-Zongwei Zhou, M. M. (2019, 12 11). UNet++: Redesigning Skip Connections to Exploit Multiscale Features in Image Segmentation. Retrieved from https://paperswithcode.com/paper/unet-redesigning-skip-connections-to-exploit: https://paperswithcode.com/paper/unet-redesigning-skip-connections-to-exploit
-
-Mahdi S. Hosseini, K. N. (2020, 6 11). AdaS: Adaptive Scheduling of Stochastic Gradients. Retrieved from https://arxiv.org/abs/2006.06587: https://arxiv.org/abs/2006.06587
-
