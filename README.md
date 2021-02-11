@@ -188,11 +188,11 @@ app.set_stragegy(stragegy)
 
 ### 1. Display dataset images
 
-![png](Remove_Background\unet_mobileV2\output_18_0.png)
-![png](Remove_Background\unet_mobileV2\output_18_1.png)
-![png](Remove_Background\unet_mobileV2\output_18_2.png)
-![png](Remove_Background\unet_mobileV2\output_18_3.png)
-![png](Remove_Background\unet_mobileV2\output_18_4.png)
+![png](Remove_Background/unet_mobileV2/output_18_0.png)
+![png](Remove_Background/unet_mobileV2/output_18_1.png)
+![png](Remove_Background/unet_mobileV2/output_18_2.png)
+![png](Remove_Background/unet_mobileV2/output_18_3.png)
+![png](Remove_Background/unet_mobileV2/output_18_4.png)
 
 ### 2. Brief information of Models 
 
@@ -259,7 +259,7 @@ Trainable params: 18,312,867
 Non-trainable params: 1,526,144
 __________________________________________________________________________________________________
 ```
-![png](Remove_Background\unet_mobileV2\output_36_0.png)
+![png](Remove_Background/unet_mobileV2/output_36_0.png)
 
 ```
 Training Process
@@ -377,7 +377,7 @@ Non-trainable params: 4,230,272
 __________________________________________________________________________________________________
 ```
 
-![png](Remove_Background\unet_mobileV3\output_36_0.png)
+![png](Remove_Background/unet_mobileV3/output_36_0.png)
 
 ```
 Training Process:
@@ -534,7 +534,7 @@ Non-trainable params: 0
 __________________________________________________________________________________________________
 ```
 
-![png](Remove_Background\unet_model_diy\output_36_0.png)
+![png](Remove_Background/unet_model_diy/output_36_0.png)
 
 ```
 Training Process :
@@ -605,128 +605,128 @@ Final result on test set
 
 #### Model - U-net MobileNetV2
 
-![png](Remove_Background\unet_mobileV2\output_47_0.png)
+![png](Remove_Background/unet_mobileV2/output_47_0.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_1.png)
+![png](Remove_Background/unet_mobileV2/output_47_1.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_2.png)
+![png](Remove_Background/unet_mobileV2/output_47_2.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_3.png)
+![png](Remove_Background/unet_mobileV2/output_47_3.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_4.png)
+![png](Remove_Background/unet_mobileV2/output_47_4.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_5.png)
+![png](Remove_Background/unet_mobileV2/output_47_5.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_6.png)
+![png](Remove_Background/unet_mobileV2/output_47_6.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_7.png)
+![png](Remove_Background/unet_mobileV2/output_47_7.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_8.png)
+![png](Remove_Background/unet_mobileV2/output_47_8.png)
 
 
 
-![png](Remove_Background\unet_mobileV2\output_47_9.png)
+![png](Remove_Background/unet_mobileV2/output_47_9.png)
 
 ***
 
 #### Model - U-net MobileNetV3
 
-![png](Remove_Background\unet_mobileV3\output_47_0.png)
+![png](Remove_Background/unet_mobileV3/output_47_0.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_1.png)
+![png](Remove_Background/unet_mobileV3/output_47_1.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_2.png)
+![png](Remove_Background/unet_mobileV3/output_47_2.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_3.png)
+![png](Remove_Background/unet_mobileV3/output_47_3.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_4.png)
+![png](Remove_Background/unet_mobileV3/output_47_4.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_5.png)
+![png](Remove_Background/unet_mobileV3/output_47_5.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_6.png)
+![png](Remove_Background/unet_mobileV3/output_47_6.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_7.png)
+![png](Remove_Background/unet_mobileV3/output_47_7.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_8.png)
+![png](Remove_Background/unet_mobileV3/output_47_8.png)
 
 
 
-![png](Remove_Background\unet_mobileV3\output_47_9.png)
+![png](Remove_Background/unet_mobileV3/output_47_9.png)
 
 
 ***
 
 #### Model - U-net Plain
 
-![png](Remove_Background\unet_model_diy\output_47_0.png)
+![png](Remove_Background/unet_model_diy/output_47_0.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_1.png)
+![png](Remove_Background/unet_model_diy/output_47_1.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_2.png)
+![png](Remove_Background/unet_model_diy/output_47_2.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_3.png)
+![png](Remove_Background/unet_model_diy/output_47_3.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_4.png)
+![png](Remove_Background/unet_model_diy/output_47_4.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_5.png)
+![png](Remove_Background/unet_model_diy/output_47_5.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_6.png)
+![png](Remove_Background/unet_model_diy/output_47_6.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_7.png)
+![png](Remove_Background/unet_model_diy/output_47_7.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_8.png)
+![png](Remove_Background/unet_model_diy/output_47_8.png)
 
 
 
-![png](Remove_Background\unet_model_diy\output_47_9.png)
+![png](Remove_Background/unet_model_diy/output_47_9.png)
 
 ***
 ## IV. Overall Comparison of all Method
@@ -787,9 +787,9 @@ Final result on test set
 
 |Model|Loss Plot|Accuracy Plot|
 |--------|-------------|---------|
-|U-net MobileNetV2| ![png](Remove_Background\unet_mobileV2\output_41_0.png) |![png](Remove_Background\unet_mobileV2\output_41_1.png)|
-|U-net MobileNetV3| ![png](Remove_Background\unet_mobileV3\output_41_0.png)|![png](Remove_Background\unet_mobileV3\output_41_1.png) |
-|U-net Plain      | ![png](Remove_Background\unet_model_diy\output_41_0.png)| ![png](Remove_Background\unet_model_diy\output_41_1.png)|
+|U-net MobileNetV2| ![png](Remove_Background/unet_mobileV2/output_41_0.png) |![png](Remove_Background/unet_mobileV2/output_41_1.png)|
+|U-net MobileNetV3| ![png](Remove_Background/unet_mobileV3/output_41_0.png)|![png](Remove_Background/unet_mobileV3/output_41_1.png) |
+|U-net Plain      | ![png](Remove_Background/unet_model_diy/output_41_0.png)| ![png](Remove_Background/unet_model_diy/output_41_1.png)|
 ***
 
 ## V. Conclusion
@@ -846,4 +846,3 @@ Zongwei Zhou, M. M. (2019, 12 11). UNet++: Redesigning Skip Connections to Explo
 
 Mahdi S. Hosseini, K. N. (2020, 6 11). AdaS: Adaptive Scheduling of Stochastic Gradients. Retrieved from https://arxiv.org/abs/2006.06587: https://arxiv.org/abs/2006.06587
 
- 
